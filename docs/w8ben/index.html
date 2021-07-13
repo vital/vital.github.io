@@ -1,87 +1,217 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="./css/main.css?v1" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Proxima+Nova&display=swap" rel="stylesheet" />
     <title>Личный кабинет Брокера</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="page">
-        <input type="checkbox" id="menu-toggle" hidden />
-        <label for="menu-toggle">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="16" height="2" rx="1" fill="#ADB3C6"/>
-                <rect y="6" width="16" height="2" rx="1" fill="#ADB3C6"/>
-                <rect y="12" width="16" height="2" rx="1" fill="#ADB3C6"/>
-            </svg>                
-        </label>
-        <div class="menu">
-            <a href="/portfolio/" id="logo"><img src="./images/logo.png" /></a>
-            <div class="items">
-                <a>Анна Г.</a>
-                <a>Портфель</a>
-                <a>Заявления</a>
-                <a>Отчеты</a>
-                <a>История</a>
-                <a>Инвест идеи</a>
-            </div>        
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle">
+        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="16" height="2" rx="1" fill="#ADB3C6" />
+          <rect y="6" width="16" height="2" rx="1" fill="#ADB3C6" />
+          <rect y="12" width="16" height="2" rx="1" fill="#ADB3C6" />
+        </svg>
+      </label>
+      <div class="menu">
+        <a href="index.html" id="logo"><img src="./images/logo.png"/></a>
+        <div class="items">
+          <a>Анна Г.</a>
+          <a href="index.html" class="active">Портфель</a>
+          <a>Заявления</a>
+          <a>Отчеты</a>
+          <a>История</a>
+          <a>Инвест идеи</a>
         </div>
-        <div class="content">
-            <header>
-              <div class="title"><h1>Брокерский</h1><a>ИИС</a></div>
-              <div class="title-action">
-                <input type="checkbox" id="search-form" hidden />
-                <form>
-                    <input type="search">
-                    <button>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1841 16.3898C19.7672 14.348 20.5133 11.7795 20.2706 9.20693C20.0279 6.63435 18.8147 4.25088 16.8777 2.54143C14.9407 0.831973 12.4255 -0.0750558 9.84375 0.00486632C7.262 0.0847884 4.80765 1.14566 2.98003 2.97165C1.1508 4.79891 0.0868904 7.25518 0.00509107 9.83993C-0.0767083 12.4247 0.829764 14.9434 2.53978 16.8827C4.2498 18.8221 6.63467 20.0361 9.20839 20.2775C11.7821 20.5189 14.351 19.7694 16.3915 18.1818L16.4461 18.239L21.8315 23.6278C21.9495 23.7458 22.0895 23.8394 22.2436 23.9033C22.3978 23.9671 22.5629 24 22.7297 24C22.8966 24 23.0617 23.9671 23.2159 23.9033C23.37 23.8394 23.51 23.7458 23.628 23.6278C23.7459 23.5098 23.8395 23.3697 23.9033 23.2155C23.9671 23.0614 24 22.8961 24 22.7292C24 22.5624 23.9671 22.3971 23.9033 22.2429C23.8395 22.0888 23.7459 21.9487 23.628 21.8307L18.2413 16.4431C18.2227 16.4248 18.2037 16.407 18.1841 16.3898ZM15.5485 4.76878C16.2653 5.47427 16.8354 6.31475 17.2259 7.24174C17.6163 8.16874 17.8195 9.1639 17.8236 10.1698C17.8277 11.1758 17.6326 12.1725 17.2497 13.1027C16.8668 14.0328 16.3036 14.8779 15.5926 15.5892C14.8816 16.3005 14.0368 16.864 13.107 17.247C12.1773 17.6301 11.1809 17.8252 10.1753 17.8211C9.16981 17.817 8.17504 17.6138 7.24842 17.2232C6.32179 16.8326 5.48164 16.2623 4.77644 15.5452C3.36713 14.1122 2.58095 12.1801 2.58913 10.1698C2.59731 8.15956 3.3992 6.23397 4.82012 4.81248C6.24104 3.39099 8.16587 2.58879 10.1753 2.5806C12.1848 2.57242 14.1161 3.35891 15.5485 4.76878Z" fill="#0057B6"/>
-                        </svg>
-                    </button>
-                </form>
-                <label for="search-form">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1841 16.3898C19.7672 14.348 20.5133 11.7795 20.2706 9.20693C20.0279 6.63435 18.8147 4.25088 16.8777 2.54143C14.9407 0.831973 12.4255 -0.0750558 9.84375 0.00486632C7.262 0.0847884 4.80765 1.14566 2.98003 2.97165C1.1508 4.79891 0.0868904 7.25518 0.00509107 9.83993C-0.0767083 12.4247 0.829764 14.9434 2.53978 16.8827C4.2498 18.8221 6.63467 20.0361 9.20839 20.2775C11.7821 20.5189 14.351 19.7694 16.3915 18.1818L16.4461 18.239L21.8315 23.6278C21.9495 23.7458 22.0895 23.8394 22.2436 23.9033C22.3978 23.9671 22.5629 24 22.7297 24C22.8966 24 23.0617 23.9671 23.2159 23.9033C23.37 23.8394 23.51 23.7458 23.628 23.6278C23.7459 23.5098 23.8395 23.3697 23.9033 23.2155C23.9671 23.0614 24 22.8961 24 22.7292C24 22.5624 23.9671 22.3971 23.9033 22.2429C23.8395 22.0888 23.7459 21.9487 23.628 21.8307L18.2413 16.4431C18.2227 16.4248 18.2037 16.407 18.1841 16.3898ZM15.5485 4.76878C16.2653 5.47427 16.8354 6.31475 17.2259 7.24174C17.6163 8.16874 17.8195 9.1639 17.8236 10.1698C17.8277 11.1758 17.6326 12.1725 17.2497 13.1027C16.8668 14.0328 16.3036 14.8779 15.5926 15.5892C14.8816 16.3005 14.0368 16.864 13.107 17.247C12.1773 17.6301 11.1809 17.8252 10.1753 17.8211C9.16981 17.817 8.17504 17.6138 7.24842 17.2232C6.32179 16.8326 5.48164 16.2623 4.77644 15.5452C3.36713 14.1122 2.58095 12.1801 2.58913 10.1698C2.59731 8.15956 3.3992 6.23397 4.82012 4.81248C6.24104 3.39099 8.16587 2.58879 10.1753 2.5806C12.1848 2.57242 14.1161 3.35891 15.5485 4.76878Z" fill="#0057B6"/>
-                    </svg>
-                </label>
+      </div>
+      <div class="content">
+        <header>
+          <div class="title">
+            <h1>Брокерский</h1>
+            <a>ИИС</a>
+          </div>
+          <div class="title-action">
+            <input type="checkbox" id="search-form" hidden />
+            <form>
+              <input type="search" />
+              <button>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.1841 16.3898C19.7672 14.348 20.5133 11.7795 20.2706 9.20693C20.0279 6.63435 18.8147 4.25088 16.8777 2.54143C14.9407 0.831973 12.4255 -0.0750558 9.84375 0.00486632C7.262 0.0847884 4.80765 1.14566 2.98003 2.97165C1.1508 4.79891 0.0868904 7.25518 0.00509107 9.83993C-0.0767083 12.4247 0.829764 14.9434 2.53978 16.8827C4.2498 18.8221 6.63467 20.0361 9.20839 20.2775C11.7821 20.5189 14.351 19.7694 16.3915 18.1818L16.4461 18.239L21.8315 23.6278C21.9495 23.7458 22.0895 23.8394 22.2436 23.9033C22.3978 23.9671 22.5629 24 22.7297 24C22.8966 24 23.0617 23.9671 23.2159 23.9033C23.37 23.8394 23.51 23.7458 23.628 23.6278C23.7459 23.5098 23.8395 23.3697 23.9033 23.2155C23.9671 23.0614 24 22.8961 24 22.7292C24 22.5624 23.9671 22.3971 23.9033 22.2429C23.8395 22.0888 23.7459 21.9487 23.628 21.8307L18.2413 16.4431C18.2227 16.4248 18.2037 16.407 18.1841 16.3898ZM15.5485 4.76878C16.2653 5.47427 16.8354 6.31475 17.2259 7.24174C17.6163 8.16874 17.8195 9.1639 17.8236 10.1698C17.8277 11.1758 17.6326 12.1725 17.2497 13.1027C16.8668 14.0328 16.3036 14.8779 15.5926 15.5892C14.8816 16.3005 14.0368 16.864 13.107 17.247C12.1773 17.6301 11.1809 17.8252 10.1753 17.8211C9.16981 17.817 8.17504 17.6138 7.24842 17.2232C6.32179 16.8326 5.48164 16.2623 4.77644 15.5452C3.36713 14.1122 2.58095 12.1801 2.58913 10.1698C2.59731 8.15956 3.3992 6.23397 4.82012 4.81248C6.24104 3.39099 8.16587 2.58879 10.1753 2.5806C12.1848 2.57242 14.1161 3.35891 15.5485 4.76878Z"
+                    fill="#0057B6"
+                  />
+                </svg>
+              </button>
+            </form>
+            <label for="search-form">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.1841 16.3898C19.7672 14.348 20.5133 11.7795 20.2706 9.20693C20.0279 6.63435 18.8147 4.25088 16.8777 2.54143C14.9407 0.831973 12.4255 -0.0750558 9.84375 0.00486632C7.262 0.0847884 4.80765 1.14566 2.98003 2.97165C1.1508 4.79891 0.0868904 7.25518 0.00509107 9.83993C-0.0767083 12.4247 0.829764 14.9434 2.53978 16.8827C4.2498 18.8221 6.63467 20.0361 9.20839 20.2775C11.7821 20.5189 14.351 19.7694 16.3915 18.1818L16.4461 18.239L21.8315 23.6278C21.9495 23.7458 22.0895 23.8394 22.2436 23.9033C22.3978 23.9671 22.5629 24 22.7297 24C22.8966 24 23.0617 23.9671 23.2159 23.9033C23.37 23.8394 23.51 23.7458 23.628 23.6278C23.7459 23.5098 23.8395 23.3697 23.9033 23.2155C23.9671 23.0614 24 22.8961 24 22.7292C24 22.5624 23.9671 22.3971 23.9033 22.2429C23.8395 22.0888 23.7459 21.9487 23.628 21.8307L18.2413 16.4431C18.2227 16.4248 18.2037 16.407 18.1841 16.3898ZM15.5485 4.76878C16.2653 5.47427 16.8354 6.31475 17.2259 7.24174C17.6163 8.16874 17.8195 9.1639 17.8236 10.1698C17.8277 11.1758 17.6326 12.1725 17.2497 13.1027C16.8668 14.0328 16.3036 14.8779 15.5926 15.5892C14.8816 16.3005 14.0368 16.864 13.107 17.247C12.1773 17.6301 11.1809 17.8252 10.1753 17.8211C9.16981 17.817 8.17504 17.6138 7.24842 17.2232C6.32179 16.8326 5.48164 16.2623 4.77644 15.5452C3.36713 14.1122 2.58095 12.1801 2.58913 10.1698C2.59731 8.15956 3.3992 6.23397 4.82012 4.81248C6.24104 3.39099 8.16587 2.58879 10.1753 2.5806C12.1848 2.57242 14.1161 3.35891 15.5485 4.76878Z"
+                  fill="#0057B6"
+                />
+              </svg>
+            </label>
 
-                <input type="checkbox" id="notify" hidden />
-                <label for="notify">
-                    <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.7667 2.72872L10.1388 2.72497C6.42552 2.71496 3.20196 6.1152 3.17642 10.2338V15.5206C3.17642 16.5092 1.92309 16.9304 1.4445 17.7526L1.12581 18.3008C0.640551 19.1318 1.16245 20.2456 2.03413 20.2456H19.5453C20.417 20.2456 20.9377 19.1318 20.4536 18.3008L20.1349 17.7526C19.6574 16.9304 18.7557 16.5092 18.7557 15.5206V10.2351C18.7112 6.11521 15.4799 2.73873 11.7667 2.72872Z" fill="#ADB3C6"/>
-                        <path d="M14.1778 20.8804C14.1778 21.7078 13.8208 22.5012 13.1854 23.0863C12.55 23.6713 11.6881 24 10.7895 24C9.89082 24 9.02898 23.6713 8.39355 23.0863C7.75811 22.5012 7.40112 21.7078 7.40112 20.8804" fill="#ADB3C6"/>
-                        <path d="M11 0C11.6654 0 12.3035 0.263702 12.774 0.733095C13.2445 1.20249 13.5088 1.83912 13.5088 2.50294V3.75442H8.49115V2.50294C8.49115 1.83912 8.75547 1.20249 9.22598 0.733095C9.69648 0.263702 10.3346 0 11 0Z" fill="#ADB3C6"/>
-                    </svg>                        
-                </label>
+            <input type="checkbox" id="notify" hidden />
+            <label for="notify">
+              <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.7667 2.72872L10.1388 2.72497C6.42552 2.71496 3.20196 6.1152 3.17642 10.2338V15.5206C3.17642 16.5092 1.92309 16.9304 1.4445 17.7526L1.12581 18.3008C0.640551 19.1318 1.16245 20.2456 2.03413 20.2456H19.5453C20.417 20.2456 20.9377 19.1318 20.4536 18.3008L20.1349 17.7526C19.6574 16.9304 18.7557 16.5092 18.7557 15.5206V10.2351C18.7112 6.11521 15.4799 2.73873 11.7667 2.72872Z"
+                  fill="#ADB3C6"
+                />
+                <path
+                  d="M14.1778 20.8804C14.1778 21.7078 13.8208 22.5012 13.1854 23.0863C12.55 23.6713 11.6881 24 10.7895 24C9.89082 24 9.02898 23.6713 8.39355 23.0863C7.75811 22.5012 7.40112 21.7078 7.40112 20.8804"
+                  fill="#ADB3C6"
+                />
+                <path
+                  d="M11 0C11.6654 0 12.3035 0.263702 12.774 0.733095C13.2445 1.20249 13.5088 1.83912 13.5088 2.50294V3.75442H8.49115V2.50294C8.49115 1.83912 8.75547 1.20249 9.22598 0.733095C9.69648 0.263702 10.3346 0 11 0Z"
+                  fill="#ADB3C6"
+                />
+              </svg>
+            </label>
+          </div>
+        </header>
+        <div class="body">
+          <div class="focus">
+            <div class="top">
+              <div>
+                <div class="title">Баланс</div>
+                <div class="buttons">
+                  <button class="btn-white">О счете</button>
+                  <button class="btn-white">Зачисления и переводы</button>
+                </div>
               </div>
-            </header>
-            <div class="body">
-            <p>Sit occaecat sit minim sunt anim occaecat ex officia ipsum ut commodo. Laborum eiusmod aute cillum aliquip eiusmod non est occaecat Lorem occaecat in adipisicing magna. Eiusmod aliqua ullamco pariatur dolore pariatur Lorem dolor ut commodo culpa velit eu. In culpa est Lorem duis ea minim sunt fugiat pariatur nulla occaecat nostrud reprehenderit. Exercitation nostrud dolore elit ad id in cillum laborum ut cupidatat officia ipsum.
-
-<p>Aute aliqua labore consectetur fugiat fugiat aliqua occaecat velit sit. Consequat reprehenderit ut fugiat exercitation proident in culpa nulla quis esse duis proident esse. Cupidatat magna sit fugiat esse pariatur cupidatat. Laborum ullamco cillum incididunt aliqua et adipisicing. Culpa deserunt magna officia aute excepteur cillum duis incididunt.
-
-<p>Anim velit incididunt officia dolor magna Lorem. Qui sit excepteur reprehenderit est tempor ut anim veniam mollit sint est enim incididunt. Labore sint reprehenderit Lorem nostrud Lorem. Commodo sit sint aute esse ea occaecat excepteur enim dolor culpa ad ad cupidatat et. Dolor qui irure amet adipisicing exercitation nostrud cillum officia dolor.
-
-    <p>Nisi quis culpa adipisicing aute pariatur minim ex magna dolore consequat. Commodo aliqua anim esse nulla. Et dolor in in officia officia enim.
-
-        <p>Sunt et velit qui ullamco sint labore pariatur et quis cupidatat non. Elit fugiat dolor dolor qui elit in aute deserunt excepteur amet dolor. Cillum tempor qui fugiat reprehenderit labore commodo. Deserunt dolor do in cupidatat. Ipsum aliquip eu in tempor elit. Nostrud dolor tempor consequat ad labore eiusmod cillum mollit fugiat deserunt quis voluptate elit.
-
-            <p>Excepteur adipisicing sunt quis velit in deserunt do amet duis. Sint ad enim excepteur proident ullamco esse irure eu elit ex aliqua. Nulla cillum aute officia aute ipsum duis elit ullamco non dolor nostrud. Mollit non enim nisi duis anim deserunt voluptate ullamco laborum occaecat non.
-
-Pariatur Lorem ullamco excepteur eu ut. Dolor occaecat exercitation ullamco cillum est esse excepteur cupidatat proident nulla aliqua irure. Adipisicing mollit Lorem amet nulla ex minim est ex. Dolor cupidatat mollit occaecat quis Lorem. Veniam et in velit dolor Lorem id enim aute commodo consequat laborum incididunt et nulla. Dolore elit nisi amet pariatur esse nostrud minim qui aliqua incididunt velit.
-
-Id officia non fugiat occaecat voluptate esse Lorem velit eu nostrud consectetur excepteur commodo. Aliqua amet incididunt irure sit cillum labore quis adipisicing. Amet amet enim nulla aliquip duis minim incididunt id incididunt nisi ad eiusmod laboris officia. Aute laboris pariatur dolor enim.
-
-Commodo labore in qui amet sint mollit aliquip dolore sit cupidatat. Culpa adipisicing anim velit excepteur cupidatat deserunt. Dolore quis magna ullamco consectetur quis ipsum non duis duis ut esse in magna commodo. Eu in proident est aliqua labore excepteur.
-
-Proident commodo est duis sit. Id Lorem do ipsum eiusmod aliquip voluptate excepteur dolor excepteur qui laboris magna enim. Aliqua adipisicing fugiat proident ex.
+              <div>
+                <div class="subtitle">Стоимость в рублях</div>
+                <div>22 240 981, 80 ₽</div>
+              </div>
+              <div>
+                <div class="subtitle">За все время</div>
+                <div>4 981, 80 Р</div>
+                <div>10.08 %</div>
+              </div>
             </div>
-        </div>
-    </div>
-</body>
+            <div class="bottom">
+              <div>
+                <div>Московская биржа</div>
+                <div>1 020 981, 80 ₽</div>
+              </div>
+              <div>
+                <div>Международные рынки</div>
+                <div>11 333, 4 $</div>
+              </div>
+              <div>
+                <div>Глобальный рынок</div>
+                <div>11 200, 80 ₽</div>
+              </div>
+            </div>
+          </div>
 
+          <input type="checkbox" hidden id="close-promo" />
+          <div class="promo">
+            <a href="#">
+              <span class="title">До 52 000 ₽ в год в дополнение к доходу от сделок</span>
+              <span>Откройте ИИС и инвестируйте с большей выгодой</span>
+              <span class="btn-white">Подробнее</span>
+            </a>
+            <label for="close-promo"
+              ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 1.00005L1.00043 16.9362" stroke="#ADB3C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M0.999939 1.03198L16.936 17" stroke="#ADB3C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </label>
+          </div>
+
+          <div class="stocks">
+            <div class="top-line">
+              <span class="active">Московская биржа</span>
+              <span>Международные рынки</span><span>Глобальный рынок</span>
+            </div>
+
+            <div class="table-stocks">
+              <div class="row">
+                <div class="info">
+                  <img src="./images/aflt.png" width="54" height="54" />
+                  <div>
+                    <div>Аэрофлот</div>
+                    <span>AFLT</span>
+                  </div>
+                </div>
+                <div class="count">3 шт.</div>
+                <div class="money">
+                  <div>14 390, 9 ₽</div>
+                  <div>1 439, 85 ₽<span>10,3 %</span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="info">
+                  <img src="./images/aflt.png" width="54" height="54" />
+                  <div>
+                    <div>Аэрофлот</div>
+                    <span>AFLT</span>
+                  </div>
+                </div>
+                <div class="count">3 шт.</div>
+                <div class="money">
+                  <div>14 390, 9 ₽</div>
+                  <div>1 439, 85 ₽<span>10,3 %</span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="info">
+                  <img src="./images/aflt.png" width="54" height="54" />
+                  <div>
+                    <div>Аэрофлот</div>
+                    <span>AFLT</span>
+                  </div>
+                </div>
+                <div class="count">3 шт.</div>
+                <div class="money">
+                  <div>14 390, 9 ₽</div>
+                  <div>1 439, 85 ₽<span>10,3 %</span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="info">
+                  <img src="./images/aflt.png" width="54" height="54" />
+                  <div>
+                    <div>Аэрофлот</div>
+                    <span>AFLT</span>
+                  </div>
+                </div>
+                <div class="count">3 шт.</div>
+                <div class="money">
+                  <div>14 390, 9 ₽</div>
+                  <div>1 439, 85 ₽<span>10,3 %</span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="info">
+                  <img src="./images/aflt.png" width="54" height="54" />
+                  <div>
+                    <div>Аэрофлот</div>
+                    <span>AFLT</span>
+                  </div>
+                </div>
+                <div class="count">3 шт.</div>
+                <div class="money">
+                  <div>14 390, 9 ₽</div>
+                  <div>1 439, 85 ₽<span>10,3 %</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
