@@ -179,6 +179,7 @@ label[for='notify'] {
   margin-top: 2rem;
   padding-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -269,6 +270,7 @@ input:checked + .promo {
   font-weight: bold;
   color: #92959f;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
@@ -306,6 +308,7 @@ input:checked + .promo {
 .table-stocks .row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 1rem 0;
   border-bottom: 2px solid #d7dee9;
