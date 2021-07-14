@@ -43,12 +43,11 @@ label[for='menu-toggle'] {
   position: fixed;
   top: 0;
   height: 100vh;
+  padding: 0 3.14rem;
 }
 
 .items {
   font-size: 1.28rem;
-  padding: 0 3.14rem;
-  width: 310px;
 }
 
 .items a,
@@ -61,6 +60,7 @@ label[for='menu-toggle'] {
 .items a:hover,
 .items a:active,
 .items a.active {
+  color: black;
   border-radius: 15px;
   background: #e9f1f9;
   text-decoration: none;
@@ -158,20 +158,22 @@ label[for='notify'] {
   flex-wrap: wrap;
 }
 
-.focus .title {
+.focus .big-title {
   font-size: 2rem;
   margin-bottom: 2.28rem;
 }
 
-.focus .subtitle {
+.focus .sub-title div:first-child {
   font-size: 1.14rem;
-  margin-bottom: 10px;
-  text-align: right;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
 }
-.focus .subtitle + div {
+.focus .sub-title div {
   font-size: 2rem;
   font-weight: bold;
   white-space: nowrap;
+  text-align: right;
+  margin-bottom: 0.4rem;
 }
 
 .focus .bottom {
@@ -179,14 +181,12 @@ label[for='notify'] {
   margin-top: 2rem;
   padding-top: 2rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .focus .bottom > div {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .focus .bottom > div > div {
@@ -201,6 +201,7 @@ label[for='notify'] {
 .buttons {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 100%;
 }
 
 .btn-white {
@@ -281,6 +282,14 @@ input:checked + .promo {
 .stocks .top-line span {
   margin-right: 4rem;
 }
+@media (max-width: 1260px) {
+  .stocks .top-line {
+    font-size: 1.2rem;
+  }
+  .stocks .top-line span {
+    margin-right: 2rem;
+  }
+}
 
 .table-stocks .info,
 .table-stocks .count {
@@ -308,7 +317,6 @@ input:checked + .promo {
 .table-stocks .row {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
   padding: 1rem 0;
   border-bottom: 2px solid #d7dee9;
@@ -316,6 +324,50 @@ input:checked + .promo {
 
 .table-stocks .row:last-child {
   border-bottom: 0;
+}
+
+@media (max-width: 1100px) {
+  .menu {
+    width: 28.5vw;
+    padding: 0 4vw;
+  }
+
+  .content {
+    margin-left: 28.5vw;
+  }
+
+  .body {
+    padding: 2.14rem 5vw;
+  }
+
+  .focus .sub-title div {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 560px) {
+  .btn-white {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .focus {
+    padding: 1rem;
+  }
+  .focus .big-title {
+    flex-basis: 100%;
+  }
+  .focus .sub-title div {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .focus .sub-title + .sub-title div {
+    text-align: right;
+    font-size: 1rem;
+  }
+
+  .focus .bottom {
+    display: none;
+  }
 }
 
 /******************************
@@ -353,6 +405,7 @@ input:checked + .promo {
     display: none;
     height: 100vh;
     width: 200px;
+    padding: 0;
   }
 
   label[for='menu-toggle'] {
@@ -425,6 +478,10 @@ input:checked + .promo {
 
   .content {
     margin-left: 0;
+  }
+
+  .focus .sub-title div {
+    font-size: 1.5rem;
   }
 }
 
