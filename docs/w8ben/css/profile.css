@@ -131,3 +131,45 @@ form input:focus {
     padding: 0.5rem 1rem;
   }
 }
+
+.form {
+  font-size: 1.28rem;
+}
+.form .label {
+  display: block;
+  color: #adb3c6;
+  margin-bottom: 0.71rem;
+}
+
+.doc {
+  display: flex;
+}
+.doc > div {
+  margin-right: 5rem;
+}
+
+.wide,
+.doc {
+  margin-bottom: 2.28rem;
+}
+.wide:last-child {
+  margin-bottom: 0;
+}
+
+.wide a {
+  font-size: 1.14rem;
+}
+
+@media (max-width: 560px) {
+  .form {
+    font-size: 1rem;
+  }
+
+  .wide,
+  .doc {
+    margin-bottom: 2rem;
+  }
+  .wide a {
+    font-size: 1rem;
+  }
+}
