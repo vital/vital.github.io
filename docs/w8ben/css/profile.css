@@ -44,10 +44,24 @@ details {
   padding: 2rem 2.28rem;
   margin-bottom: 2rem;
 }
+details > summary:after {
+  content: '';
+  background: url(../images/triangle.svg) center center no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 1rem;
+}
+details[open] > summary:after {
+  transform: rotate(180deg);
+}
 
 summary {
   font-size: 2rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  outline: none;
 }
 
 summary + div {
@@ -89,6 +103,10 @@ form input:focus {
   }
   summary + div {
     margin-top: 1.48rem;
+  }
+  details > summary:after {
+    margin-left: 0.5rem;
+    background-size: 80%;
   }
   details {
     padding: 1rem;
