@@ -29,6 +29,7 @@ body {
   height: 100%;
   position: relative;
   max-width: 1440px;
+  width: 100%;
 }
 label {
   cursor: pointer;
@@ -52,6 +53,7 @@ label[for='menu-toggle'] {
 
 .items a,
 .items a:visited {
+  color: black;
   padding: 16px 24px;
   display: flex;
   align-items: center;
@@ -229,6 +231,11 @@ label[for='notify'] {
   margin-bottom: 2rem;
   position: relative;
 }
+.promo.arc {
+  background-image: url(../images/blue-arc.png);
+  background-size: contain;
+  background-position: right;
+}
 
 input:checked + .promo {
   display: none;
@@ -345,31 +352,6 @@ input:checked + .promo {
   }
 }
 
-@media (max-width: 560px) {
-  .btn-white {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-  .focus {
-    padding: 1rem;
-  }
-  .focus .big-title {
-    flex-basis: 100%;
-  }
-  .focus .sub-title div {
-    text-align: left;
-    font-size: 1.2rem;
-  }
-  .focus .sub-title + .sub-title div {
-    text-align: right;
-    font-size: 1rem;
-  }
-
-  .focus .bottom {
-    display: none;
-  }
-}
-
 /******************************
  * Маленькая высота экрана 
  **/
@@ -482,6 +464,65 @@ input:checked + .promo {
 
   .focus .sub-title div {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .btn-white {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .focus,
+  .promo a {
+    padding: 1rem;
+  }
+
+  .focus .big-title {
+    flex-basis: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .focus .sub-title div:first-child {
+    font-size: 1rem;
+  }
+  .focus .sub-title div {
+    text-align: left;
+    font-size: 1rem;
+  }
+  .focus .sub-title + .sub-title div {
+    text-align: right;
+    font-size: 1rem;
+  }
+
+  .focus .bottom {
+    display: none;
+  }
+
+  .promo {
+    background-size: 20%;
+  }
+  .promo .title {
+    font-size: 1.14rem;
+    font-weight: bold;
+  }
+  .promo .title + span {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .promo .btn-white {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .focus .buttons .btn-white {
+    width: 100%;
+  }
+
+  .focus .btn-white + .btn-white {
+    margin-left: 0;
+    margin-top: 0.5rem;
   }
 }
 
