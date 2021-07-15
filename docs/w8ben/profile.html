@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
     <link href="./css/main.css?v4" rel="stylesheet" />
+    <link href="./css/profile.css?v1" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Proxima+Nova&display=swap" rel="stylesheet" />
     <title>Данные профиля - Личный кабинет Брокера</title>
   </head>
@@ -82,6 +83,19 @@
           </div>
         </header>
         <div class="body">
+          <div class="photo-name">
+            <div class="photo">
+              <img src="images/dima.png" />
+            </div>
+            <div class="name">
+              <div>
+                Синицин<br />
+                Дмитрий Борисович
+              </div>
+              <div class="qual">Квалифицированный инвестор</div>
+            </div>
+          </div>
+
           <input type="checkbox" hidden id="close-promo" />
           <div class="promo arc">
             <a href="#">
@@ -97,85 +111,30 @@
             </label>
           </div>
 
-          <div class="stocks">
-            <div class="top-line">
-              <span class="active">Московская биржа</span>
-              <span>Международные рынки</span><span>Глобальный рынок</span>
+          <details open>
+            <summary>Контактные данные</summary>
+            <div>
+              <form>
+                <div class="field">
+                  <label for="phone">Телефон</label>
+                  <input type="phone" autocomplete="off" id="phone" value="+7 922 292 92 92" />
+                </div>
+                <div class="field">
+                  <label for="email">E-mail</label>
+                  <input type="email" autocomplete="off" id="email" value="mitya@gmail.com" />
+                </div>
+                <div><button class="btn-blue" type="submit">Сохранить</button></div>
+              </form>
             </div>
+          </details>
 
-            <div class="table-stocks">
-              <div class="row">
-                <div class="info">
-                  <img src="./images/aflt.png" width="54" height="54" />
-                  <div>
-                    <div>Аэрофлот</div>
-                    <span>AFLT</span>
-                  </div>
-                </div>
-                <div class="count">3 шт.</div>
-                <div class="money">
-                  <div>14 390, 9 ₽</div>
-                  <div>1 439, 85 ₽<span>10,3 %</span></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="info">
-                  <img src="./images/aflt.png" width="54" height="54" />
-                  <div>
-                    <div>Аэрофлот</div>
-                    <span>AFLT</span>
-                  </div>
-                </div>
-                <div class="count">3 шт.</div>
-                <div class="money">
-                  <div>14 390, 9 ₽</div>
-                  <div>1 439, 85 ₽<span>10,3 %</span></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="info">
-                  <img src="./images/aflt.png" width="54" height="54" />
-                  <div>
-                    <div>Аэрофлот</div>
-                    <span>AFLT</span>
-                  </div>
-                </div>
-                <div class="count">3 шт.</div>
-                <div class="money">
-                  <div>14 390, 9 ₽</div>
-                  <div>1 439, 85 ₽<span>10,3 %</span></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="info">
-                  <img src="./images/aflt.png" width="54" height="54" />
-                  <div>
-                    <div>Аэрофлот</div>
-                    <span>AFLT</span>
-                  </div>
-                </div>
-                <div class="count">3 шт.</div>
-                <div class="money">
-                  <div>14 390, 9 ₽</div>
-                  <div>1 439, 85 ₽<span>10,3 %</span></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="info">
-                  <img src="./images/aflt.png" width="54" height="54" />
-                  <div>
-                    <div>Аэрофлот</div>
-                    <span>AFLT</span>
-                  </div>
-                </div>
-                <div class="count">3 шт.</div>
-                <div class="money">
-                  <div>14 390, 9 ₽</div>
-                  <div>1 439, 85 ₽<span>10,3 %</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <details>
+            <summary>Паспортные данные</summary>
+          </details>
+
+          <details>
+            <summary>Документы</summary>
+          </details>
         </div>
       </div>
     </div>

@@ -1,0 +1,115 @@
+.photo-name {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.photo {
+  flex-basis: 100px;
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.name div:first-child {
+  font-size: 2rem;
+}
+
+.qual {
+  color: #0057b6;
+  font-size: 1rem;
+  padding: 0.71rem 1rem;
+  background: #f6f8fb;
+  border-radius: 61px;
+  margin: 0.2rem 0;
+}
+
+details {
+  border-radius: 10px;
+  background: #f7f9fb;
+  padding: 2rem 2.28rem;
+  margin-bottom: 2rem;
+}
+
+summary {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+summary + div {
+  margin-top: 2rem;
+}
+
+details form {
+  display: flex;
+  align-items: flex-end;
+}
+
+form label {
+  font-size: 1.28rem;
+  display: block;
+  color: black;
+  margin-bottom: 0.71rem;
+}
+
+form input {
+  padding: 0.8rem 1.14rem;
+  border: 2px solid #d7dee9;
+  background: white;
+  width: 100%;
+  outline: none;
+  font-size: 1.28rem;
+}
+form input:focus {
+  box-shadow: 0 0 4px 0 #d7d7d7;
+}
+
+.field {
+  flex-basis: 40%;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 560px) {
+  summary {
+    font-size: 1.14rem;
+  }
+  summary + div {
+    margin-top: 1.48rem;
+  }
+  details {
+    padding: 1rem;
+  }
+  details form {
+    display: block;
+  }
+  .field {
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .name div:first-child {
+    font-size: 1.14rem;
+  }
+  form label {
+    font-size: 1rem;
+  }
+
+  form input {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}

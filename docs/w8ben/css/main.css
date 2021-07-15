@@ -222,6 +222,22 @@ label[for='notify'] {
   margin-left: 1.14rem;
 }
 
+.btn-blue {
+  border: 2px solid #0057b6;
+  border-radius: 10px;
+  padding: 0.8rem 1.14rem;
+  color: white;
+  background: #0057b6;
+  font-size: 1.14rem;
+  font-weight: normal;
+  white-space: nowrap;
+  display: inline-block;
+}
+.btn-blue:focus {
+  box-shadow: 0 0 4px 0 #0057b6;
+  outline: none;
+}
+
 /** Голубой блок */
 .promo {
   display: block;
@@ -468,7 +484,8 @@ input:checked + .promo {
 }
 
 @media (max-width: 560px) {
-  .btn-white {
+  .btn-white,
+  .btn-blue {
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
@@ -907,12 +924,6 @@ input:checked + .promo {
   opacity: 1;
   text-align: left;
 }
-.name {
-  color: #fff;
-}
-.name {
-  color: #fff;
-}
 .v340_41 {
   width: 100%;
   height: 268px;
@@ -1181,9 +1192,6 @@ input:checked + .promo {
   font-size: 18px;
   opacity: 1;
   text-align: left;
-}
-.name {
-  color: #fff;
 }
 .v340_63 {
   width: 172px;
@@ -2228,13 +2236,4 @@ input:checked + .promo {
   font-size: 32px;
   opacity: 1;
   text-align: left;
-}
-.name {
-  color: #fff;
-}
-.name {
-  color: #fff;
-}
-.name {
-  color: #fff;
 }
