@@ -27,15 +27,21 @@
 }
 
 .type-title + span {
-  color: #727187;
   font-size: 1.14rem;
 }
 
 .request-list .row {
   border-bottom: 2px solid #d7dee9;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+}
+
+.request-list .row > div {
+  flex-basis: 180px;
+  padding: 0.2rem 0;
 }
 
 .request-list .row:last-child {
@@ -48,7 +54,15 @@
   font-weight: bold;
 }
 
+.reverse-list {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 560px) {
+  .reverse-list {
+    flex-direction: column-reverse;
+  }
   .bubble-list {
     display: block;
     margin-bottom: 2rem;
@@ -72,5 +86,8 @@
 
   .request-list .label {
     font-size: 1rem;
+  }
+
+  .request-list .row {
   }
 }

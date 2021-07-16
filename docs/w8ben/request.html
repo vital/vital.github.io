@@ -4,11 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
-    <link href="./css/main.css?v8" rel="stylesheet" />
-    <link href="./css/profile.css?v8" rel="stylesheet" />
-    <link href="./css/request.css?v8" rel="stylesheet" />
+    <link href="./css/main.css?v9" rel="stylesheet" />
+    <link href="./css/profile.css?v9" rel="stylesheet" />
+    <link href="./css/request.css?v9" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Proxima+Nova&display=swap" rel="stylesheet" />
-    <title>Данные профиля - Личный кабинет Брокера</title>
+    <title>Заявления - Личный кабинет Брокера</title>
   </head>
 
   <body>
@@ -99,48 +99,50 @@
             </label>
           </div>
 
-          <div class="bubble-list">
-            <div>
-              <a href="#">
-                <span class="type-title">Налоги</span>
-                <span>Заявления связанные с налогами</span>
-              </a>
+          <div class="reverse-list">
+            <div class="bubble-list">
+              <div>
+                <a href="request-taxes.html">
+                  <span class="type-title">Налоги</span>
+                  <span class="gray">Заявления связанные с налогами</span>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <span class="type-title">Биржа</span>
+                  <span class="gray">Заявления связанные с биржей</span>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <span class="type-title">Токен</span>
+                  <span class="gray">Заявления связанные с выпуском и заменой токенов</span>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <span class="type-title">Квалификация</span>
+                  <span class="gray">Заявления связанные с измененем уровня квалификации</span>
+                </a>
+              </div>
             </div>
-            <div>
-              <a href="#">
-                <span class="type-title">Биржа</span>
-                <span>Заявления связанные с биржей</span>
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <span class="type-title">Токен</span>
-                <span>Заявления связанные с выпуском и заменой токенов</span>
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <span class="type-title">Квалификация</span>
-                <span>Заявления связанные с измененем уровня квалификации</span>
-              </a>
-            </div>
-          </div>
 
-          <details open>
-            <summary>Мои заявления</summary>
-            <div class="request-list">
-              <div class="row">
-                <div class="label">Заявление номер 1</div>
-                <div>Одобрено</div>
-                <div>Бессрочно</div>
+            <details>
+              <summary>Мои заявления</summary>
+              <div class="request-list">
+                <div class="row">
+                  <div class="label">Заявление номер 1</div>
+                  <div>Одобрено</div>
+                  <div>Бессрочно</div>
+                </div>
+                <div class="row">
+                  <div class="label">Форма W-8BEN</div>
+                  <div>На рассмотрении</div>
+                  <div>до 30.06.2024</div>
+                </div>
               </div>
-              <div class="row">
-                <div class="label">Форма W-8BEN</div>
-                <div>На рассмотрении</div>
-                <div>до 30.06.2024</div>
-              </div>
-            </div>
-          </details>
+            </details>
+          </div>
         </div>
       </div>
     </div>
