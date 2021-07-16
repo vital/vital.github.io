@@ -1,3 +1,23 @@
+h2 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+h2 + div {
+  font-size: 1.28rem;
+  margin-bottom: 1.5rem;
+  line-height: 150%;
+}
+
+.progress {
+  font-size: 1.28rem;
+  margin-bottom: 2rem;
+}
+
+.progress .blue {
+  font-weight: bold;
+}
+
 .photo-name {
   display: flex;
   padding-bottom: 2rem;
@@ -84,7 +104,8 @@ form label {
   margin-bottom: 0.71rem;
 }
 
-form input {
+form input,
+form textarea {
   padding: 0.8rem 1.14rem;
   border: 2px solid #d7dee9;
   background: white;
@@ -92,7 +113,8 @@ form input {
   outline: none;
   font-size: 1.28rem;
 }
-form input:focus {
+form input:focus,
+form textarea:focus {
   box-shadow: 0 0 4px 0 #d7d7d7;
 }
 
@@ -105,23 +127,52 @@ form input:focus {
   flex-basis: 100%;
   padding-right: 0;
   padding-right: 0;
+  margin-bottom: 0;
 }
 
+.wide .confirm,
+.wide .confirm a {
+  font-size: 1rem;
+}
+
+.confirm input {
+  margin-right: 1rem;
+}
 @media (max-width: 560px) {
-  summary {
+  h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.28rem;
+  }
+
+  h2 + div {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 150%;
+  }
+
+  .progress {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  summary,
+  .summary {
     font-size: 1.14rem;
   }
-  summary + div {
+  summary + div,
+  .summary + div {
     margin-top: 1.48rem;
   }
   details > summary:after {
     margin-left: 0.5rem;
     background-size: 80%;
   }
-  details {
+  details,
+  .details {
     padding: 1rem;
   }
-  details form {
+  details form,
+  .details {
     display: block;
   }
   .field {
@@ -153,14 +204,14 @@ form input:focus {
 
 .doc {
   display: flex;
+  flex-wrap: wrap;
 }
 .doc > div {
   margin-right: 5rem;
   margin-bottom: 2.28rem;
 }
 
-.wide,
-.doc {
+.wide {
   margin-bottom: 2.28rem;
 }
 .wide:last-child {
@@ -177,8 +228,11 @@ form input:focus {
   }
 
   .wide,
-  .doc {
+  .doc > div {
     margin-bottom: 2rem;
+  }
+  .doc > div {
+    margin-right: 1rem;
   }
   .wide a {
     font-size: 1rem;

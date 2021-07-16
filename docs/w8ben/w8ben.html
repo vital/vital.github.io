@@ -34,7 +34,7 @@
       <div class="content">
         <header>
           <div class="title">
-            <h1>Форма W-8BEN</h1>
+            <h1>Заявления</h1>
           </div>
 
           <div class="title-action">
@@ -82,8 +82,17 @@
             </label>
           </div>
         </header>
+        <div class="back"><a href="request.html">&larr; Назад</a></div>
         <div class="body">
+          <h2>Форма W-8BEN</h2>
+          <div>
+            Сократите налог на дивиденды по американским ценным бумагам, оформив форму W-8BEN. Налог с дивидендов по американским ценным
+            бумагам будет снижен с 30% до 13%. При этом 10% будут списываться автоматически, а 3% придется оплачивать самостоятельно.
+            <a href="#">Подробнее</a>
+          </div>
           <div class="details">
+            <div class="progress"><span class="blue">Шаг 1</span> &mdash; Шаг 2 &mdash; Шаг 3</div>
+
             <div class="summary">Проверка персональных данных, необходимых для формы W-8BEN</div>
             <div class="form">
               <div class="wide">
@@ -118,13 +127,13 @@
 
               <form class="wide">
                 <div class="field">
-                  <label for="address">Почтовый адрес</label>
-                  <input type="text" autocomplete="off" id="address" value="Россия, Москва, 1-я Тверская-Ямская, дом 5, кв. 76" />
+                  <label for="address" class="label">Почтовый адрес</label>
+                  <textarea autocomplete="off" id="address" rows="3">Россия, Москва, 1-я Тверская-Ямская, дом 5, кв. 76</textarea>
                 </div>
               </form>
 
               <div class="wide">
-                <label
+                <label class="confirm"
                   ><input type="checkbox" required />Я согласен с правильностью данных и с <a href="#">правилами подачи заявления</a></label
                 >
               </div>

@@ -375,9 +375,6 @@ input:checked + .promo {
   margin-right: 1rem;
 }
 
-.table-stocks .count {
-}
-
 .table-stocks .row {
   display: flex;
   justify-content: space-between;
