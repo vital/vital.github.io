@@ -38,7 +38,8 @@
   margin: 0.2rem 0;
 }
 
-details {
+details,
+.details {
   border-radius: 10px;
   background: #f7f9fb;
   padding: 2rem 2.28rem;
@@ -56,7 +57,8 @@ details[open] > summary:after {
   transform: rotate(180deg);
 }
 
-summary {
+summary,
+.summary {
   font-size: 2rem;
   cursor: pointer;
   display: flex;
@@ -64,11 +66,13 @@ summary {
   outline: none;
 }
 
-summary + div {
+summary + div,
+.summary + div {
   margin-top: 2rem;
 }
 
-details form {
+details form,
+.details form {
   display: flex;
   align-items: flex-end;
 }
@@ -95,6 +99,12 @@ form input:focus {
 .field {
   flex-basis: 40%;
   padding-right: 1.5rem;
+}
+
+.wide .field {
+  flex-basis: 100%;
+  padding-right: 0;
+  padding-right: 0;
 }
 
 @media (max-width: 560px) {
@@ -146,6 +156,7 @@ form input:focus {
 }
 .doc > div {
   margin-right: 5rem;
+  margin-bottom: 2.28rem;
 }
 
 .wide,
