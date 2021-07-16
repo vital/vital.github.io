@@ -138,6 +138,7 @@ form textarea:focus {
 .confirm input {
   margin-right: 1rem;
 }
+
 @media (max-width: 560px) {
   h2 {
     margin: 0 0 1rem 0;

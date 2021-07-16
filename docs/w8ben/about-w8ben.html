@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="format-detection" content="telephone=no" />
-    <link href="./css/main.css?v11" rel="stylesheet" />
-    <link href="./css/profile.css?v11" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Proxima+Nova&display=swap" rel="stylesheet" />
-    <title>Форма W-8BEN - Налоги - Личный кабинет Брокера</title>
+    <link href="./css/main.css?v11" rel="stylesheet" />
+    <title>Document</title>
   </head>
-
   <body>
     <div class="page">
       <input type="checkbox" id="menu-toggle" hidden />
@@ -34,7 +29,7 @@
       <div class="content">
         <header>
           <div class="title">
-            <h1>Заявления</h1>
+            <h1>Форма W-8BEN</h1>
           </div>
 
           <div class="title-action">
@@ -82,69 +77,36 @@
             </label>
           </div>
         </header>
-        <div class="back"><a href="request.html">&larr; Назад</a></div>
-        <div class="body">
-          <h2>Форма W-8BEN</h2>
-          <div>
-            Сократите налог на дивиденды по американским ценным бумагам, оформив форму W-8BEN. Налог с дивидендов по американским ценным
-            бумагам будет снижен с 30% до 13%. При этом 10% будут списываться автоматически, а 3% придется оплачивать самостоятельно.
-            <a href="about-w8ben.html">Подробнее</a>
-          </div>
-          <div class="details">
-            <div class="progress"><span class="blue">Шаг 1</span> &mdash; Шаг 2 &mdash; Шаг 3</div>
-
-            <div class="summary">Проверка персональных данных, необходимых для формы W-8BEN</div>
-            <div class="form">
-              <div class="wide">
-                <div class="label">ФИО</div>
-                <div class="value">Синицин Дмитрий Борисович</div>
-              </div>
-
-              <div class="wide">
-                <div class="label">Адрес регистрации</div>
-                <div class="value">Россия, Москва, 1-я Тверская-Ямская, дом 5, кв. 76</div>
-              </div>
-
-              <div class="doc">
-                <div>
-                  <div class="label">Дата рождения</div>
-                  <div class="value">12.08.1983</div>
-                </div>
-                <div>
-                  <div class="label">Гражданство</div>
-                  <div class="value">Российская Федерация</div>
-                </div>
-                <div>
-                  <div class="label">Налоговое резиденство</div>
-                  <div class="value">Российская Федерация</div>
-                </div>
-              </div>
-
-              <div class="wide">
-                <div class="label">ИНН</div>
-                <div class="value">5462047152361</div>
-              </div>
-
-              <form class="wide">
-                <div class="field">
-                  <label for="address" class="label">Почтовый адрес</label>
-                  <textarea autocomplete="off" id="address" rows="3">Россия, Москва, 1-я Тверская-Ямская, дом 5, кв. 76</textarea>
-                </div>
-              </form>
-
-              <div class="wide">
-                <label class="confirm"
-                  ><input type="checkbox" required />Я согласен с правильностью данных и с <a href="#">правилами подачи заявления</a></label
-                >
-              </div>
-
-              <div class="wide">
-                <a href="#" onclick="alert('Для изменения данных обратитесь к вашему менеджеру');return false">Я нашёл ошибку в данных</a>
-              </div>
-
-              <button class="btn-blue">Дальше</button>
-            </div>
-          </div>
+        <div class="back"><a href="javascript:history.back()">&larr; Назад</a></div>
+        <div class="body faq">
+          <bold>Зачем нужна W-8BEN?</bold>
+          <p>
+            Получение физическим лицом какого-либо дохода в форме процентов, дивидендов, роялти и так далее от источников в Соединенных
+            Штатах при отсутствии трудового договора (по контракту), предусматривает уплату налогов в размере 30%. Внести данную сумму
+            должен тот самый «источник», то есть компания, с которой вы работаете, которая и выступает в данном случае налоговым агентом. В
+            связи с заключенным соглашением между США и Российской Федерации об Устранении двойного налогообложения, налог с дивидендов
+            Американских акций может быть сокращен с 30% до 13%. Форма W-8BEN как раз необходима чтобы освободить ваш доход от налогов в
+            США, подтвердив, что вы не налоговый резидент данной страны.
+          </p>
+          <bold>Кому подавать W-8BEN?</bold>
+          <p>
+            Заполненная форма подается через Банк, выполняющий посреднечиские функции по передаче формы вышестоящему депозитарию для расчета
+            налога с понимжеой ставкой. Отправлять ее куда-либо еще, в том числе в IRS, не нужно.
+          </p>
+          <bold>Имеется ли срок действия?</bold>
+          <p>Срок действия документа – три года, либо пока не изменится статус налогоплательщика или какие-либо другие данные.</p>
+          <bold>А если компаний – партнеров (брокеров) несколько?</bold>
+          <p>
+            В зависимости от количества компаний из США, с которыми вы работаете, форма W-8 BEN может потребоваться каждой из них. Это
+            обычная практика: каждой компании необходимо индивидуально отчитаться перед налоговой. Связываться с вами по указанным адресам
+            никто не будет, никаких данных в фискальные органы по месту жительства также не передается. Переживать на этот счет не стоит.
+          </p>
+          <bold>Заполнение формы W-8BEN</bold>
+          <p>
+            Оговоримся сразу: при заполнении формы W-8BEN вы лишь идентифицируете себя, то есть просто подписываете форму, где указано, что
+            вы гражданин РФ (Украины, Казахстана и так далее). Никаких сумм, процентов, контрагентов и прочих данных там нет.
+          </p>
+          <bold>Мы подготовим для вас заполненную форму, вам нужно только ее проверить и подписать.</bold>
         </div>
       </div>
     </div>

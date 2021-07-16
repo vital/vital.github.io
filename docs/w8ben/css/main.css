@@ -25,6 +25,13 @@ a {
   color: #727187;
 }
 
+.faq {
+  font-size: 1.28rem;
+}
+bold {
+  font-weight: bold;
+}
+
 #logo {
   display: flex;
   padding: 2rem 0;
