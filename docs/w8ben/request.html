@@ -6,6 +6,7 @@
     <meta name="format-detection" content="telephone=no" />
     <link href="./css/main.css?v8" rel="stylesheet" />
     <link href="./css/profile.css?v8" rel="stylesheet" />
+    <link href="./css/request.css?v8" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Proxima+Nova&display=swap" rel="stylesheet" />
     <title>Данные профиля - Личный кабинет Брокера</title>
   </head>
@@ -23,9 +24,9 @@
       <div class="menu">
         <a href="index.html" id="logo"><img src="./images/logo.png"/></a>
         <div class="items">
-          <a href="profile.html" class="active"><img src="./images/dima.png" />Дмитрий С.</a>
+          <a href="profile.html"><img src="./images/dima.png" />Дмитрий С.</a>
           <a href="index.html">Портфель</a>
-          <a href="request.html">Заявления</a>
+          <a href="request.html" class="active">Заявления</a>
           <a href="index.html">Отчеты</a>
           <a href="index.html">История</a>
           <a href="index.html">Инвест идеи</a>
@@ -34,7 +35,7 @@
       <div class="content">
         <header>
           <div class="title">
-            <h1>Данные профиля</h1>
+            <h1>Заявления</h1>
           </div>
 
           <div class="title-action">
@@ -83,19 +84,6 @@
           </div>
         </header>
         <div class="body">
-          <div class="photo-name">
-            <div class="photo">
-              <img src="images/dima.png" />
-            </div>
-            <div class="name">
-              <div>
-                Синицин<br />
-                Дмитрий Борисович
-              </div>
-              <div class="qual">Квалифицированный инвестор</div>
-            </div>
-          </div>
-
           <input type="checkbox" hidden id="close-promo" />
           <div class="promo arc">
             <a href="#">
@@ -111,80 +99,45 @@
             </label>
           </div>
 
-          <details>
-            <summary>Контактные данные</summary>
+          <div class="bubble-list">
             <div>
-              <form>
-                <div class="field">
-                  <label for="phone">Телефон</label>
-                  <input type="phone" autocomplete="off" id="phone" value="+7 922 292 92 92" />
-                </div>
-                <div class="field">
-                  <label for="email">E-mail</label>
-                  <input type="email" autocomplete="off" id="email" value="mitya@gmail.com" />
-                </div>
-                <div><button class="btn-blue" type="submit">Сохранить</button></div>
-              </form>
+              <a href="#">
+                <span class="type-title">Налоги</span>
+                <span>Заявления связанные с налогами</span>
+              </a>
             </div>
-          </details>
-
-          <details>
-            <summary>Паспортные данные</summary>
-            <div class="form">
-              <div class="wide">
-                <div class="label">Дата рождения</div>
-                <div class="value">12.08.1983</div>
-              </div>
-
-              <div class="doc">
-                <div>
-                  <div class="label">Серия</div>
-                  <div class="value">VI-ГО</div>
-                </div>
-                <div>
-                  <div class="label">Номер</div>
-                  <div class="value">242325</div>
-                </div>
-                <div>
-                  <div class="label">Дата выдачи</div>
-                  <div class="value">22.05.2016</div>
-                </div>
-              </div>
-
-              <div class="wide">
-                <div class="label">Кем выдан</div>
-                <div class="value">УФМС Росси по гор. Москва по районе Хамовники</div>
-              </div>
-
-              <div class="wide">
-                <div class="label">Адрес регистрации</div>
-                <div class="value">Россия, Москва, 1-я Тверская-Ямская, дом 5, кв. 76</div>
-              </div>
-
-              <div class="wide">
-                <a href="#" onclick="alert('Для изменения паспортных данных обратитесь к вашему менеджеру');return false"
-                  >Изменить паспортные данные</a
-                >
-              </div>
+            <div>
+              <a href="#">
+                <span class="type-title">Биржа</span>
+                <span>Заявления связанные с биржей</span>
+              </a>
             </div>
-          </details>
+            <div>
+              <a href="#">
+                <span class="type-title">Токен</span>
+                <span>Заявления связанные с выпуском и заменой токенов</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <span class="type-title">Квалификация</span>
+                <span>Заявления связанные с измененем уровня квалификации</span>
+              </a>
+            </div>
+          </div>
 
-          <details>
-            <summary>Документы</summary>
-            <div class="form">
-              <div class="doc">
-                <div>
-                  <div class="label">ИНН</div>
-                  <div class="value">5462047152361</div>
-                </div>
-                <div>
-                  <div class="label">СНИЛС</div>
-                  <div class="value">123-456-789 12</div>
-                </div>
+          <details open>
+            <summary>Мои заявления</summary>
+            <div class="request-list">
+              <div class="row">
+                <div class="label">Заявление номер 1</div>
+                <div>Одобрено</div>
+                <div>Бессрочно</div>
               </div>
-
-              <div class="wide">
-                <a href="#" onclick="alert('Для изменения документов обратитесь к вашему менеджеру');return false">Изменить документы</a>
+              <div class="row">
+                <div class="label">Форма W-8BEN</div>
+                <div>На рассмотрении</div>
+                <div>до 30.06.2024</div>
               </div>
             </div>
           </details>

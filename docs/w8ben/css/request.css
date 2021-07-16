@@ -1,0 +1,76 @@
+.bubble-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.bubble-list > div {
+  background: #f7f9fb;
+  border-radius: 10px;
+  flex-basis: calc(50% - 2rem);
+  margin: 0 1rem 2rem 1rem;
+}
+.bubble-list a {
+  display: block;
+
+  padding: 2.28rem;
+  color: black;
+  text-decoration: none;
+}
+
+.type-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.type-title + span {
+  color: #727187;
+  font-size: 1.14rem;
+}
+
+.request-list .row {
+  border-bottom: 2px solid #d7dee9;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.request-list .row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.request-list .label {
+  font-size: 1.28rem;
+  font-weight: bold;
+}
+
+@media (max-width: 560px) {
+  .bubble-list {
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .bubble-list a {
+    padding: 1rem;
+  }
+  .bubble-list > div {
+    margin: 0 0 1.42rem 0;
+  }
+  .type-title {
+    font-size: 1.14rem;
+  }
+
+  .type-title + span {
+    font-size: 0.85rem;
+  }
+
+  .request-list .label {
+    font-size: 1rem;
+  }
+}
