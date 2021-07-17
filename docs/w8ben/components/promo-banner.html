@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <input type="checkbox" hidden id="close-promo" />
+    <div class="promo arc">
+      <label class="block" for="open-modal">
+        <span class="title">Снизьте ставку на налог с дивидендов по американским акциям</span>
+        <span>Заполните налоговую форму W-8BEN прямо на сайте и платите 13% вместо 30%</span>
+        <span class="btn-white">Подробнее</span>
+      </label>
+      <label for="close-promo"
+        ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1.00005L1.00043 16.9362" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M0.999939 1.03198L16.936 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </label>
+    </div>
+
+    <input type="checkbox" hidden id="open-modal" />
+    <div class="modal">
+      <div>
+        <label for="open-modal"
+          ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 1.00005L1.00043 16.9362" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M0.999939 1.03198L16.936 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </label>
+        <div class="modal-body">
+          <h2>Форма W-8BEN</h2>
+          <ul>
+            <li>
+              Позволяет получить право на налоговые льготы по доходам с американских акций, снизив ставку с 30% до 13%, если вы налоговый
+              резидент РФ
+            </li>
+            <li>10% удерживается автоматически депозитарием при выплате дохода</li>
+            <li>
+              Вы должны самостоятельно уплачивать в ФНС России 3% от суммы, перечисленной эмитентом, а не той, что поступила на ваш счет
+            </li>
+            <li>
+              Распространяется только на американский рынок, на налогообложение дохода от европейских или китайских компаний она не влияет
+            </li>
+            <li>Не снизит налог на дивиденды, получаемые от REIT фондов недвижимости и MLP–партнерств (Master Limited Partnership)</li>
+            <li>Действует в течение года подписания плюс еще 3 года</li>
+            <li>Не влияет на налогообложение дохода, получаемого за счет совершения сделок с ценными бумагами</li>
+            <li>Форма направляется в Национальный расчетный депозитарий, где рассматривается до 30 календарных дней</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a class="btn-blue" href="w8ben.html">Подать форму</a><a class="btn-white" href="about-w8ben.html">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
