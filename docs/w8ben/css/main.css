@@ -55,7 +55,7 @@ bold {
   min-height: 100vh;
   height: 100%;
   position: relative;
-  max-width: 1440px;
+  max-width: 1680px;
   width: 100%;
 }
 label {
@@ -657,7 +657,7 @@ input:checked + .modal {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   content: '';
 }
 .modal-body {

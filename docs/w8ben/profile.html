@@ -38,14 +38,14 @@
           <details>
             <summary>Контактные данные</summary>
             <div>
-              <form>
+              <form class="forma" id="personal">
                 <div class="field">
                   <label for="phone">Телефон</label>
-                  <input type="phone" autocomplete="off" id="phone" value="+7 922 292 92 92" />
+                  <input type="phone" required autocomplete="off" id="phone" value="+7 922 292 92 92" />
                 </div>
                 <div class="field">
                   <label for="email">E-mail</label>
-                  <input type="email" autocomplete="off" id="email" value="mitya@gmail.com" />
+                  <input type="email" required autocomplete="off" id="email" value="mitya@gmail.com" />
                 </div>
                 <div><button class="btn-blue" type="submit">Сохранить</button></div>
               </form>
@@ -99,7 +99,7 @@
               <div class="doc">
                 <div>
                   <div class="label">ИНН</div>
-                  <div class="value">5462047152361</div>
+                  <div class="value">7744001497</div>
                 </div>
                 <div>
                   <div class="label">СНИЛС</div>
@@ -115,5 +115,23 @@
         </div>
       </div>
     </div>
+    <script>
+      try {
+        let _phone = localStorage.getItem('phone');
+        if (_phone) document.getElementById('phone').value = _phone;
+
+        let _email = localStorage.getItem('email');
+        if (_email) document.getElementById('email').value = _email;
+      } catch (e) {}
+
+      document.getElementById('personal').onsubmit = function () {
+        try {
+          localStorage.setItem('phone', document.getElementById('phone').value);
+          localStorage.setItem('email', document.getElementById('email').value);
+        } catch (e) {}
+
+        alert('Ваши данные сохранены');
+      };
+    </script>
   </body>
 </html>

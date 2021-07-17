@@ -28,63 +28,123 @@
             бумагам будет снижен с 30% до 13%. При этом 10% будут списываться автоматически, а 3% придется оплачивать самостоятельно.
             <a href="about-w8ben.html">Подробнее</a>
           </div>
-          <div class="details">
-            <div class="progress"><span class="blue">Шаг 1</span> &mdash; Шаг 2 &mdash; Шаг 3</div>
+
+          <div class="details" id="step3-2">
+            <div class="progress">
+              <a href="#step1" class="blue">Шаг 1</a> &mdash; <a href="#step2" class="blue">Шаг 2</a> &mdash;
+              <a href="#step2" class="blue">Шаг 3</a>
+            </div>
+
+            <div class="summary">Скачайте и распечатайте форму</div>
+            <div>
+              <a href="forma-w8ben.pdf" target="_blank"><img src="./images/preview.png" width="108" height="140" border="0"/></a>
+            </div>
+            <br />
+
+            <div class="summary">Прикрепите отсканированную и подписанную форму</div>
+            <div>
+              <div><input type="file" /></div>
+              <br />
+              <button class="btn-blue">Отправить</button>
+            </div>
+          </div>
+
+          <div class="details" id="step2">
+            <div class="progress">
+              <a href="#step1" class="blue">Шаг 1</a> &mdash; <a href="#step2" class="blue">Шаг 2</a> &mdash; Шаг 3
+            </div>
+
+            <div class="summary">Ознакомьтесь с содержимым формы</div>
+            <div>
+              <a href="forma-w8ben.pdf" target="_blank"><img src="./images/preview.png" width="108" height="140" border="0"/></a>
+            </div>
+            <br />
+            <div class="summary">Как бы вы хотели подписать форму?</div>
+            <div>
+              <a class="btn-blue" href="w8ben.html">Через SMS</a><a class="btn-white" href="about-w8ben.html">Распечатать и подписать</a>
+            </div>
+          </div>
+
+          <div class="details" id="step1">
+            <div class="progress"><a href="#step1" class="blue">Шаг 1</a> &mdash; Шаг 2 &mdash; Шаг 3</div>
 
             <div class="summary">Проверка персональных данных, необходимых для формы W-8BEN</div>
-            <div class="form">
-              <div class="wide">
-                <div class="label">ФИО</div>
-                <div class="value">Синицин Дмитрий Борисович</div>
-              </div>
-
-              <div class="wide">
-                <div class="label">Адрес регистрации</div>
-                <div class="value">Россия, Москва, 1-я Тверская-Ямская, дом 5, кв. 76</div>
-              </div>
-
-              <div class="doc">
-                <div>
-                  <div class="label">Дата рождения</div>
-                  <div class="value">12.08.1983</div>
+            <div>
+              <form class="form" id="personal-form">
+                <div class="wide">
+                  <div class="label">ФИО</div>
+                  <div class="value">Синицин Дмитрий Борисович</div>
                 </div>
-                <div>
-                  <div class="label">Гражданство</div>
-                  <div class="value">Российская Федерация</div>
-                </div>
-                <div>
-                  <div class="label">Налоговое резиденство</div>
-                  <div class="value">Российская Федерация</div>
-                </div>
-              </div>
 
-              <div class="wide">
-                <div class="label">ИНН</div>
-                <div class="value">5462047152361</div>
-              </div>
-
-              <form class="wide">
-                <div class="field">
-                  <label for="address" class="label">Почтовый адрес</label>
-                  <textarea autocomplete="off" id="address" rows="3">Россия, Москва, 1-я Тверская-Ямская, дом 5, кв. 76</textarea>
+                <div class="wide">
+                  <div class="label">Адрес регистрации</div>
+                  <div class="value">Россия, Москва, 1-я Тверская-Ямская, дом 5, кв. 76</div>
                 </div>
+
+                <div class="doc">
+                  <div>
+                    <div class="label">Дата рождения</div>
+                    <div class="value">12.08.1983</div>
+                  </div>
+                  <div>
+                    <div class="label">Гражданство</div>
+                    <div class="value">Российская Федерация</div>
+                  </div>
+                  <div>
+                    <div class="label">Налоговое резиденство</div>
+                    <div class="value">Российская Федерация</div>
+                  </div>
+                </div>
+
+                <div class="wide">
+                  <div class="label">ИНН</div>
+                  <div class="value">7744001497</div>
+                </div>
+
+                <div class="forma wide">
+                  <div class="field">
+                    <label for="address" class="label">Почтовый адрес</label>
+                    <textarea autocomplete="off" id="address" required name="address" rows="3">
+Россия, Москва, 1-я Тверская-Ямская, дом 5, кв. 76</textarea
+                    >
+                  </div>
+                </div>
+
+                <div class="wide">
+                  <label class="confirm"
+                    ><input
+                      type="checkbox"
+                      required
+                      id="agree"
+                      oninvalid="this.setCustomValidity('Проверьте ваши данные и ознакомьтесь с правилами подачи заявления')"
+                      oninput="setCustomValidity('')"
+                    />Я согласен с правильностью данных и с <a href="#">правилами подачи заявления</a></label
+                  >
+                </div>
+
+                <div class="wide">
+                  <a href="#" onclick="alert('Для изменения данных обратитесь к вашему менеджеру');return false">Я нашёл ошибку в данных</a>
+                </div>
+
+                <button class="btn-blue" type="submit">Дальше</button>
               </form>
-
-              <div class="wide">
-                <label class="confirm"
-                  ><input type="checkbox" required />Я согласен с правильностью данных и с <a href="#">правилами подачи заявления</a></label
-                >
-              </div>
-
-              <div class="wide">
-                <a href="#" onclick="alert('Для изменения данных обратитесь к вашему менеджеру');return false">Я нашёл ошибку в данных</a>
-              </div>
-
-              <button class="btn-blue">Дальше</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      try {
+        let _address = localStorage.getItem('address');
+        if (_address) document.getElementById('address').value = _address;
+      } catch (e) {}
+
+      document.getElementById('personal-form').onsubmit = function () {
+        try {
+          localStorage.setItem('address', document.getElementById('address').value);
+        } catch (e) {}
+      };
+    </script>
   </body>
 </html>
