@@ -740,3 +740,7 @@ label[for='choose-file'] span {
   color: #adb3c6;
   font-size: 1.28rem;
 }
+
+div[hidden] {
+  display: none;
+}
