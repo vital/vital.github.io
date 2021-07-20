@@ -20,7 +20,7 @@
         <link rel="import" href="./components/header.html" onload="loadHTML(this)" data-replace="Заявления" />
 
         <div class="body">
-          <link rel="import" href="./components/promo-banner.html" onload="loadHTML(this)" />
+          <link rel="import" href="./components/promo-banner.html" onload="loadHTML(this)" data-check="w8ben" />
 
           <div class="reverse-list">
             <div class="bubble-list">
@@ -58,16 +58,26 @@
                   <div>Одобрено</div>
                   <div>Бессрочно</div>
                 </div>
-                <div class="row">
-                  <div class="label">Форма W-8BEN</div>
-                  <div>На рассмотрении</div>
-                  <div>до 30.06.2024</div>
-                </div>
               </div>
             </details>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      let f = false;
+      try {
+        f = sessionStorage.getItem('w8ben');
+      } catch (e) {}
+
+      if (f) {
+        let row = document.createElement('div');
+        row.className = 'row';
+        row.innerHTML = `<div class="label">Форма W-8BEN</div>
+                  <div class="red">На рассмотрении</div>
+                  <div>до 30.06.2024</div>`;
+        document.querySelector('.request-list').appendChild(row);
+      }
+    </script>
   </body>
 </html>

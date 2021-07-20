@@ -1,0 +1,11 @@
+.form {
+  border-radius: 10px;
+  background: #f7f9fb;
+  padding: 2rem 2.28rem;
+  margin-bottom: 2rem;
+}
+
+.progress {
+  font-size: 1.28rem;
+  margin-bottom: 1rem;
+}

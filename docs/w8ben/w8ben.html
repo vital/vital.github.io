@@ -19,7 +19,21 @@
       <div class="content">
         <link rel="import" href="./components/header.html" onload="loadHTML(this)" data-replace="Заявления" />
 
-        <div class="back"><a href="request.html">&larr; Назад</a></div>
+        <div class="back">
+          <a href="request.html"
+            ><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.91333 5.5H18.49" stroke="#0057B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M6.07967 1.0332L1 5.7625L6.07967 9.96666"
+                stroke="#0057B6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Назад</a
+          >
+        </div>
 
         <div class="body">
           <h2>Форма W-8BEN</h2>
@@ -30,7 +44,7 @@
           </div>
 
           <div class="details" id="step1">
-            <div class="progress"><a href="#step1" class="blue">Шаг 1</a> &mdash; Шаг 2 &mdash; Шаг 3</div>
+            <div class="progress" data-steps><a href="#step1" class="blue">Шаг 1</a> &mdash; Шаг 2 &mdash; Шаг 3</div>
 
             <div class="summary">Проверка персональных данных, необходимых для формы W-8BEN</div>
             <div>
@@ -96,36 +110,104 @@
           </div>
 
           <div class="details" id="step2" hidden>
-            <div class="progress">
+            <div class="progress" data-steps>
               <a href="#step1" class="blue">Шаг 1</a> &mdash; <a href="#step2" class="blue">Шаг 2</a> &mdash; Шаг 3
             </div>
 
             <div class="summary">Ознакомьтесь с содержимым формы</div>
             <div>
-              <a href="forma-w8ben.pdf" target="_blank"><img src="./images/preview.png" width="108" height="140" border="0"/></a>
+              <a href="forma-w8ben.pdf" target="_blank" class="preview"
+                ><img src="./images/preview.png" width="108" height="140" border="0"
+              /></a>
             </div>
             <br />
             <div class="summary">Как бы вы хотели подписать форму?</div>
-            <div><a class="btn-blue" href="step3-1">Через SMS</a><a class="btn-white" href="#step3-2">Распечатать и подписать</a></div>
+            <div data-steps>
+              <a class="btn-blue" href="#step3-1">Через SMS</a><a class="btn-white" href="#step3-2">Распечатать и подписать</a>
+            </div>
+          </div>
+
+          <div class="details" id="step3-1" hidden>
+            <div class="progress" data-steps>
+              <a href="#step1" class="blue">Шаг 1</a> &mdash; <a href="#step2" class="blue">Шаг 2</a> &mdash;
+              <a href="#step3-1" class="blue">Шаг 3</a>
+            </div>
+
+            <div class="summary" data-phone>На ваш номер телефона {phone} был выслан код подтверждения, введите его в поле ниже</div>
+            <div>
+              <form class="forma" id="sms-code">
+                <div class="field">
+                  <label for="code">Код подтверждения</label>
+                  <input type="text" name="code" autocomplete="off" id="code" size="4" placeholder="0000" />
+                  <p>
+                    <a href="#" onclick="alert('Повторно код можно получить через 30 секунд');return false">Выслать код повторно</a>
+                  </p>
+                  <p>
+                    <a
+                      href="#"
+                      onclick="if (confirm('Перейти в раздел Контактные данные вашего профиля для смены номера телефона?')) location.href='profile.html'; else return false"
+                      >Не верный номер телефона</a
+                    >
+                  </p>
+                  <br />
+                  <p>
+                    <button class="btn-blue" type="submit">Отправить</button>
+                  </p>
+                </div>
+              </form>
+            </div>
           </div>
 
           <div class="details" id="step3-2" hidden>
-            <div class="progress">
+            <div class="progress" data-steps>
               <a href="#step1" class="blue">Шаг 1</a> &mdash; <a href="#step2" class="blue">Шаг 2</a> &mdash;
-              <a href="#step2" class="blue">Шаг 3</a>
+              <a href="#step3-2" class="blue">Шаг 3</a>
             </div>
 
             <div class="summary">Скачайте и распечатайте форму</div>
             <div>
-              <a href="forma-w8ben.pdf" target="_blank"><img src="./images/preview.png" width="108" height="140" border="0"/></a>
+              <a href="forma-w8ben.pdf" target="_blank" class="preview"
+                ><img src="./images/preview.png" width="108" height="140" border="0"
+              /></a>
             </div>
             <br />
 
             <div class="summary">Прикрепите отсканированную и подписанную форму</div>
+
             <div>
-              <div><input type="file" /></div>
-              <br />
-              <button class="btn-blue">Отправить</button>
+              <form id="scan-submit">
+                <label for="choose-file"
+                  ><input
+                    type="file"
+                    required
+                    id="choose-file"
+                    oninvalid="this.setCustomValidity('Выберите файл подписанной и отсканированной формы')"
+                    oninput="setCustomValidity('')"/><span></span
+                ></label>
+              </form>
+            </div>
+            <p>
+              <button for="open-modal" class="btn-blue" type="submit" form="scan-submit">Отправить</button>
+            </p>
+          </div>
+
+          <input type="checkbox" hidden id="open-modal" />
+          <div class="modal">
+            <div>
+              <label for="open-modal"
+                ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="black" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 1.00005L1.00043 16.9362" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M0.999939 1.03198L16.936 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </label>
+              <div class="modal-body">
+                <p>Форма W-8BEN успешно отправлена на проверку.</p>
+                <p>Срок рассмотрения формы до 30 рабочих дней.</p>
+                <p>Статус рассмотрения вы можете отслеживать на странице "Мои заявления" в разделе "Налоги"</p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn-blue" href="request.html">Мои заявления</a>
+              </div>
             </div>
           </div>
         </div>
@@ -133,16 +215,7 @@
     </div>
 
     <script>
-      try {
-        let _address = localStorage.getItem('address');
-        if (_address) document.getElementById('address').value = _address;
-      } catch (e) {}
-
-      document.getElementById('personal-form').onsubmit = function () {
-        try {
-          localStorage.setItem('address', document.getElementById('address').value);
-        } catch (e) {}
-      };
+      w8benInit();
     </script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova&display=swap" rel="stylesheet" />
+    <link href="./css/main.css?v12" rel="stylesheet" />
+
+    <title>История - Личный кабинет Брокера</title>
+    <script src="./js/common.js"></script>
+    <script src="./js/HTMLImports.min.js"></script>
+  </head>
+
+  <body>
+    <div class="page">
+      <link rel="import" href="./components/menu.html" onload="loadHTML(this)" data-active="history" />
+
+      <div class="content">
+        <link rel="import" href="./components/header.html" onload="loadHTML(this)" data-replace="История" />
+
+        <div class="body">
+          <link rel="import" href="./components/promo-banner.html" onload="loadHTML(this)" data-check="w8ben" />
+
+          <p>Тут будет история операций, но их делает кто-то другой</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      profileInit();
+    </script>
+  </body>
+</html>

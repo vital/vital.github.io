@@ -31,6 +31,9 @@ a {
 .gray {
   color: #727187;
 }
+.red {
+  color: red;
+}
 
 .faq {
   font-size: 1.28rem;
@@ -124,6 +127,7 @@ label[for='menu-toggle'] {
 
 .back {
   margin: 1.14rem 0 -1rem 4.28rem;
+  font-weight: bold;
 }
 
 .back a {
@@ -131,8 +135,12 @@ label[for='menu-toggle'] {
   text-decoration: none;
   font-size: 0.85rem;
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
 }
-
+.back svg {
+  margin-right: 0.5rem;
+}
 header {
   display: flex;
   border-bottom: 2px solid rgba(226, 226, 226, 0.4);
@@ -331,6 +339,7 @@ input:checked + .promo {
   font-size: 2rem;
   display: block;
   margin-bottom: 0.5rem;
+  color: #010032;
 }
 .promo .title + span {
   font-size: 1.28rem;
@@ -640,9 +649,12 @@ input:checked + .modal {
   background: white;
   padding: 2rem 3rem 2rem 2.28rem;
   width: 100%;
-  max-width: 800px;
+  max-width: 540px;
   position: relative;
   margin: 0 1rem;
+}
+.modal.wider > div {
+  max-width: 800px;
 }
 
 .modal label {
@@ -670,7 +682,7 @@ input:checked + .modal {
 .modal-footer {
   display: flex;
   padding-top: 1rem;
-
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -686,4 +698,45 @@ input:checked + .modal {
   .modal-body {
     font-size: 1rem;
   }
+}
+
+.preview {
+  border: 2px solid #0057b6;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+label[for='choose-file'] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+label[for='choose-file'] input {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 1px;
+  height: 1px;
+  z-index: 0;
+}
+label[for='choose-file']:before {
+  content: '+';
+  display: inline-flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 10px;
+  background: #e9f1f9;
+  align-items: center;
+  justify-content: center;
+  color: #adb3c6;
+  font-size: 3rem;
+  z-index: 1;
+}
+
+label[for='choose-file'] span {
+  margin-left: 1rem;
+  color: #adb3c6;
+  font-size: 1.28rem;
 }

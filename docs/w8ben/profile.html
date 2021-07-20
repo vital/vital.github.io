@@ -33,7 +33,7 @@
             </div>
           </div>
 
-          <link rel="import" href="./components/promo-banner.html" onload="loadHTML(this)" />
+          <link rel="import" href="./components/promo-banner.html" onload="loadHTML(this)" data-check="w8ben" />
 
           <details>
             <summary>Контактные данные</summary>
@@ -116,22 +116,7 @@
       </div>
     </div>
     <script>
-      try {
-        let _phone = localStorage.getItem('phone');
-        if (_phone) document.getElementById('phone').value = _phone;
-
-        let _email = localStorage.getItem('email');
-        if (_email) document.getElementById('email').value = _email;
-      } catch (e) {}
-
-      document.getElementById('personal').onsubmit = function () {
-        try {
-          localStorage.setItem('phone', document.getElementById('phone').value);
-          localStorage.setItem('email', document.getElementById('email').value);
-        } catch (e) {}
-
-        alert('Ваши данные сохранены');
-      };
+      profileInit();
     </script>
   </body>
 </html>

@@ -19,16 +19,30 @@
       <div class="content">
         <link rel="import" href="./components/header.html" onload="loadHTML(this)" data-replace="Налоги" />
 
-        <div class="back"><a href="request.html">&larr; Назад</a></div>
+        <div class="back">
+          <a href="request.html"
+            ><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.91333 5.5H18.49" stroke="#0057B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M6.07967 1.0332L1 5.7625L6.07967 9.96666"
+                stroke="#0057B6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Назад</a
+          >
+        </div>
         <div class="body">
-          <link rel="import" href="./components/promo-banner.html" onload="loadHTML(this)" />
+          <link rel="import" href="./components/promo-banner.html" onload="loadHTML(this)" data-check="w8ben" />
 
           <div class="reverse-list">
             <div class="bubble-list">
               <div>
                 <a href="w8ben.html">
                   <span class="type-title">Форма W-8BEN</span>
-                  <span class="blue">Не оформлено</span>
+                  <span class="blue" id="request-form">Не оформлено</span>
                 </a>
               </div>
               <div>
@@ -54,5 +68,21 @@
         </div>
       </div>
     </div>
+    <script>
+      let f = false;
+      try {
+        f = sessionStorage.getItem('w8ben');
+      } catch (e) {}
+
+      if (f) {
+        let r = document.getElementById('request-form');
+        r.innerText = 'На рассмотрении';
+        r.className = 'red';
+        r.parentNode.href = '#';
+        r.parentNode.onclick = function () {
+          alert('Вы уже подали форму, дождитесь пожалуйста результата. Срок оформления до 30 дней.');
+        };
+      }
+    </script>
   </body>
 </html>
