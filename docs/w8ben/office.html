@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova&display=swap" rel="stylesheet" />
+    <link href="./css/main.css?v13" rel="stylesheet" />
+
+    <title>Отделения банка - Личный кабинет Брокера</title>
+    <script src="./js/common.js"></script>
+    <script src="./js/HTMLImports.min.js"></script>
+  </head>
+
+  <body>
+    <div class="page">
+      <link rel="import" href="./components/menu.html" onload="loadHTML(this)" data-active="report" />
+
+      <div class="content">
+        <link rel="import" href="./components/header.html" onload="loadHTML(this)" data-replace="Отделения банка" />
+
+        <div class="back">
+          <a href="javascript:history.back()"
+            ><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.91333 5.5H18.49" stroke="#0057B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M6.07967 1.0332L1 5.7625L6.07967 9.96666"
+                stroke="#0057B6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Назад</a
+          >
+        </div>
+        <div class="body">
+          <input type="radio" name="show-as" hidden id="show-map" checked />
+          <input type="radio" name="show-as" hidden id="show-list" />
+          <div id="map-switch"><label for="show-map">На карте</label> <label for="show-list">Списком</label></div>
+
+          <div class="show-map"><img src="./images/map.jpg" width="100%" /></div>
+          <div class="show-list"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      profileInit();
+    </script>
+  </body>
+</html>

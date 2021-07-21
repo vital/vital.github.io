@@ -8,18 +8,16 @@
 html {
   font-size: 14px;
 }
-details,
-summary {
-  display: block;
-}
 body {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
-a {
+a,
+.a {
   color: #0057b6;
+  text-decoration: underline;
 }
 
 .blue {
@@ -369,12 +367,14 @@ input:checked + .promo {
   justify-content: space-between;
   margin-bottom: 1rem;
 }
+
 .stocks .top-line .active {
   color: black;
 }
 
 .stocks .top-line span {
   margin-right: 4rem;
+  white-space: nowrap;
 }
 @media (max-width: 1260px) {
   .stocks .top-line {
@@ -742,5 +742,34 @@ label[for='choose-file'] span {
 }
 
 div[hidden] {
+  display: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+#map-switch {
+  margin-bottom: 2rem;
+}
+#map-switch label {
+  font-size: 1.57rem;
+  margin-right: 2rem;
+  color: #92959f;
+  font-weight: bold;
+}
+
+#show-map:checked + input + div label[for='show-map'],
+#show-list:checked + div label[for='show-list'] {
+  color: #010032;
+}
+
+#show-map:checked + input + div + .show-map,
+#show-list:checked + div + div + .show-list {
+  display: block;
+}
+
+#show-map:checked + input + div + .show-map + .show-list,
+#show-list:checked + .show-map {
   display: none;
 }

@@ -86,9 +86,7 @@
               </div>
 
               <div class="wide">
-                <a href="#" onclick="alert('Для изменения паспортных данных обратитесь к вашему менеджеру');return false"
-                  >Изменить паспортные данные</a
-                >
+                <label for="change-docs" class="a">Изменить паспортные данные</label>
               </div>
             </div>
           </details>
@@ -108,13 +106,16 @@
               </div>
 
               <div class="wide">
-                <a href="#" onclick="alert('Для изменения документов обратитесь к вашему менеджеру');return false">Изменить документы</a>
+                <label for="change-docs" class="a">Изменить документы</label>
               </div>
             </div>
           </details>
+
+          <link rel="import" href="./components/change-docs.html" onload="loadHTML(this)" />
         </div>
       </div>
     </div>
+
     <script>
       profileInit();
     </script>

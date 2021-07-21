@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
     <link href="https://fonts.googleapis.com/css?family=Proxima+Nova&display=swap" rel="stylesheet" />
-
     <link href="./css/main.css?v13" rel="stylesheet" />
+
     <title>Налоги - Заявления - Личный кабинет Брокера</title>
     <script src="./js/common.js"></script>
     <script src="./js/HTMLImports.min.js"></script>
@@ -40,10 +40,10 @@
           <div class="reverse-list">
             <div class="bubble-list">
               <div>
-                <a href="w8ben.html">
+                <label for="open-modal">
                   <span class="type-title">Форма W-8BEN</span>
                   <span class="blue" id="request-form">Не оформлено</span>
-                </a>
+                </label>
               </div>
               <div>
                 <a href="#">
@@ -78,7 +78,7 @@
         let r = document.getElementById('request-form');
         r.innerText = 'На рассмотрении';
         r.className = 'red';
-        r.parentNode.href = '#';
+        r.parentNode.for = '';
         r.parentNode.onclick = function () {
           alert('Вы уже подали форму, дождитесь пожалуйста результата. Срок оформления до 30 дней.');
         };

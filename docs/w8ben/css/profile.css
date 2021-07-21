@@ -1,3 +1,8 @@
+details,
+summary {
+  display: block;
+}
+
 h2 {
   margin: 0 0 1rem 0;
   font-size: 2rem;
@@ -193,11 +198,13 @@ details .forma,
   .name div:first-child {
     font-size: 1.14rem;
   }
-  form label {
+  form label,
+  .forma label {
     font-size: 1rem;
   }
 
-  form input {
+  form input,
+  .forma input {
     font-size: 1rem;
     padding: 0.5rem 1rem;
   }
@@ -228,7 +235,8 @@ details .forma,
   margin-bottom: 0;
 }
 
-.wide a {
+.wide a,
+.wide .a {
   font-size: 1.14rem;
 }
 
@@ -244,7 +252,8 @@ details .forma,
   .doc > div {
     margin-right: 1rem;
   }
-  .wide a {
+  .wide a,
+  .wide .a {
     font-size: 1rem;
   }
 }

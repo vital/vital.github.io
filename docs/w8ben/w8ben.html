@@ -101,13 +101,15 @@
                 </div>
 
                 <div class="wide">
-                  <a href="#" onclick="alert('Для изменения данных обратитесь к вашему менеджеру');return false">Я нашёл ошибку в данных</a>
+                  <label class="a" for="change-docs">Я нашёл ошибку в данных</label>
                 </div>
 
                 <button class="btn-blue" type="submit">Дальше</button>
               </form>
             </div>
           </div>
+
+          <link rel="import" href="./components/change-docs.html" onload="loadHTML(this)" />
 
           <div class="details" id="step2" hidden>
             <div class="progress" data-steps>

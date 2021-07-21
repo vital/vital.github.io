@@ -12,7 +12,8 @@
   flex-basis: calc(50% - 2rem);
   margin: 0 1rem 2rem 1rem;
 }
-.bubble-list a {
+.bubble-list a,
+.bubble-list label {
   display: block;
 
   padding: 2.28rem;
@@ -71,7 +72,8 @@
     margin-right: 0rem;
   }
 
-  .bubble-list a {
+  .bubble-list a,
+  .bubble-list label {
     padding: 1rem;
   }
   .bubble-list > div {
