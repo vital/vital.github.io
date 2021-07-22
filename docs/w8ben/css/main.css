@@ -164,6 +164,10 @@ header a {
   display: flex;
 }
 
+.title a {
+  text-decoration: none;
+}
+
 .title-action {
   display: flex;
 }
@@ -770,6 +774,6 @@ summary::-webkit-details-marker {
 }
 
 #show-map:checked + input + div + .show-map + .show-list,
-#show-list:checked + .show-map {
+#show-list:checked + div + .show-map {
   display: none;
 }

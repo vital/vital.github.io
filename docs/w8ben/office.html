@@ -13,7 +13,7 @@
 
   <body>
     <div class="page">
-      <link rel="import" href="./components/menu.html" onload="loadHTML(this)" data-active="report" />
+      <link rel="import" href="./components/menu.html" onload="loadHTML(this)" data-active="request" />
 
       <div class="content">
         <link rel="import" href="./components/header.html" onload="loadHTML(this)" data-replace="Отделения банка" />
@@ -37,7 +37,6 @@
           <input type="radio" name="show-as" hidden id="show-map" checked />
           <input type="radio" name="show-as" hidden id="show-list" />
           <div id="map-switch"><label for="show-map">На карте</label> <label for="show-list">Списком</label></div>
-
           <div class="show-map"><img src="./images/map.jpg" width="100%" /></div>
           <div class="show-list"></div>
         </div>
